@@ -1,9 +1,9 @@
 <?php
 require_once 'connection.php';
 
-$id = $_GET['id_person'];
+$id = $_GET['id'];
 
-$sql = "DELETE FROM person WHERE id=$id_person";
+$sql = "DELETE FROM person WHERE id = $id";
 
 if (mysqli_query($conn, $sql)) {
     header("Location: index.php");

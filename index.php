@@ -16,7 +16,7 @@
         <input type="text" name="nama" placeholder="Nama" class="form-control mb-3" >
         <input type="email" name="email" placeholder="email" class="form-control mb-3">
         <input type="text" name="no_hp" placeholder="No HP" class="form-control mb-3">
-        <input type="submit" class="btn btn-primary">
+        <input type="submit" class="btn btn-success">
     </form>
 
 
@@ -46,7 +46,8 @@
                     <td><?php echo $row['email'] ?></td>
                     <td><?php echo $row['no_hp'] ?></td>
                     <td>
-                        <a href="proses_delete.php?id=<?php echo $row['id_person']; ?>" class="btn btn-danger btn-sm">Hapus</a>
+                        <a href="proses_delete.php?id=<?php echo $row['id']; ?>" class="btn btn-danger btn-sm">Hapus</a>
+                        <a href="proses_update.php?id=<?php echo $row['id']; ?>" class="btn btn-primary btn-sm">Update</a>
                     </td>
                 </tr>
                 <?php } ?>
